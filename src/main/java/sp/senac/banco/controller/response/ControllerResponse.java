@@ -2,44 +2,27 @@ package sp.senac.banco.controller.response;
 
 import java.util.List;
 
-public class Response<T> {
+public class ControllerResponse<T> {
 
     private String message;
-    private List<T> data;
-    private Integer status;
     private String timestamp;
+    private List<T> data;
 
-    public Response(){}
 
-    public Response(String message, List<T> data) {
+    public ControllerResponse(){}
+
+    public ControllerResponse(String message, List<T> data, String timestamp) {
         this.message = message;
         this.data = data;
+        this.timestamp = timestamp;
     }
 
     public String getMessage() {
         return message;
     }
 
-    public Response<T> setMessage(String message) {
+    public ControllerResponse<T> setMessage(String message) {
         this.message = message;
-        return this;
-    }
-
-    public List<T> getData() {
-        return data;
-    }
-
-    public Response<T> setData(List<T> data) {
-        this.data = data;
-        return this;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public Response<T> setStatus(Integer status) {
-        this.status = status;
         return this;
     }
 
@@ -47,8 +30,17 @@ public class Response<T> {
         return timestamp;
     }
 
-    public Response<T> setTimestamp(String timestamp) {
+    public ControllerResponse<T> setTimestamp(String timestamp) {
         this.timestamp = timestamp;
+        return this;
+    }
+
+    public List<T> getData() {
+        return data;
+    }
+
+    public ControllerResponse<T> setData(List<T> data) {
+        this.data = data;
         return this;
     }
 

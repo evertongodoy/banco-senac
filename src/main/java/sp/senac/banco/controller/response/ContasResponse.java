@@ -2,7 +2,7 @@ package sp.senac.banco.controller.response;
 
 import java.util.List;
 
-public class Contas {
+public class ContasResponse {
 
     private List<ContaResponse> contas;
 
@@ -10,7 +10,7 @@ public class Contas {
         return contas;
     }
 
-    public Contas setContas(List<ContaResponse> contas) {
+    public ContasResponse setContas(List<ContaResponse> contas) {
         this.contas = contas;
         return this;
     }

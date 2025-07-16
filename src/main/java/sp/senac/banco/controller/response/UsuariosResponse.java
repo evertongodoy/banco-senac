@@ -2,7 +2,7 @@ package sp.senac.banco.controller.response;
 
 import java.util.List;
 
-public class Usuarios {
+public class UsuariosResponse {
 
     private List<UsuarioResponse> usuarios;
 
@@ -10,7 +10,7 @@ public class Usuarios {
         return usuarios;
     }
 
-    public Usuarios setUsuarios(List<UsuarioResponse> usuarios) {
+    public UsuariosResponse setUsuarios(List<UsuarioResponse> usuarios) {
         this.usuarios = usuarios;
         return this;
     }
